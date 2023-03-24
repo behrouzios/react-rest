@@ -1,0 +1,31 @@
+version: "3.9"
+services:
+  backend:
+    build: . 
+    volumes:
+      - .:/app
+    ports:
+      - 8000:8000
+    depends_on:
+      - db3_custom
+      - redis
+  db3_custom:
+    image: mysql:5.7.22
+    restart: always
+    environment:
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASS}
+      MYSQL_ROOT_PASSWORD: ${DB_PASS}
+
+    volumes:
+    - .dbdata_custom:/var_custom/lib/mysql
+    ports:
+      - 3306:3306
+  redis:
+    image: redis:alpine
+    ports: 
+        - 6379:6379
+    entrypoint: redis-server --appendonly yes
+
+  

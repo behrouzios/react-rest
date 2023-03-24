@@ -1,0 +1,6 @@
+2023/03/03-14:19:56.371 7063c Creating DB /home/behrouzios/Python/Web Projects/Antonio Papa/React-Djngo-env/react_django_final/venv/~/tmp/Default/IndexedDB/https_www.aparat.com_0.indexeddb.leveldb since it was missing.
+2023/03/03-14:19:56.375 7063c Reusing MANIFEST /home/behrouzios/Python/Web Projects/Antonio Papa/React-Djngo-env/react_django_final/venv/~/tmp/Default/IndexedDB/https_www.aparat.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/03/03-18:55:33.087 760f7 Level-0 table #5: started
+2023/03/03-18:55:33.090 760f7 Level-0 table #5: 1316 bytes OK
+2023/03/03-18:55:33.092 760f7 Delete type=0 #3
+2023/03/03-18:55:33.092 760f7 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
